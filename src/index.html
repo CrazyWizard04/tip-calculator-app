@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <main>
+      <img src="images/logo.svg" alt="Tip Calculator Logo" class="logo" />
+
+      <div class="calculator">
+        <form id="calculator-form" class="calculator-form">
+          <div class="form-element-container">
+            <div class="form-element-control">
+              <label for="bill-amount" class="form-label">Bill</label>
+              <div class="error-display"></div>
+            </div>
+
+            <input
+              type="number"
+              name="bill-amount"
+              id="bill-amount"
+              placeholder="0"
+              class="number-input"
+            />
+          </div>
+
+          <div class="form-element-container">
+            <div class="form-element-control">
+              <label for="custom-tip" class="form-label">Select Tip %</label>
+              <div class="error-display"></div>
+            </div>
+
+            <div class="tip-pct-grid">
+              <button type="button" data-value="5" class="tip-btn">5%</button>
+              <button type="button" data-value="10" class="tip-btn">10%</button>
+              <button type="button" data-value="15" class="tip-btn">15%</button>
+              <button type="button" data-value="25" class="tip-btn">25%</button>
+              <button type="button" data-value="50" class="tip-btn">50%</button>
+
+              <input
+                type="number"
+                name="custom-tip"
+                id="custom-tip"
+                placeholder="Custom"
+                class="percentage-input"
+              />
+            </div>
+          </div>
+
+          <div class="form-element-container">
+            <div class="form-element-control">
+              <label for="people-amount" class="form-label">
+                Number of People
+              </label>
+              <div class="error-display"></div>
+            </div>
+
+            <input
+              type="number"
+              name="people-amount"
+              id="people-amount"
+              placeholder="0"
+              class="number-input"
+            />
+          </div>
+        </form>
+
+        <div class="calculator-results">
+          <div class="results-container">
+            <div class="result-element">
+              <p class="result-description">Tip Amount<span>/ person</span></p>
+              <p class="tip-amount-result" aria-live="polite">$0.00</p>
+            </div>
+
+            <div class="result-element">
+              <p class="result-description">Total<span>/ person</span></p>
+              <p class="total-amount-result" aria-live="polite">$0.00</p>
+            </div>
+          </div>
+
+          <button class="reset-btn" disabled>Reset</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
