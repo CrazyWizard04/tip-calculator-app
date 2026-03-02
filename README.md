@@ -42,6 +42,13 @@ A responsive tip calculator app that allows users to:
 
 ---
 
+### 🔗 Links
+
+- 💡 Solution URL: [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/tip-calculator-with-html-css-and-javascript-2qG6On6GMr)
+- 🌐 Live Site URL: [Live Demo](https://thewizard04-tip-calculator.vercel.app)
+
+---
+
 ## 🛠️ My process
 
 ### 🧰 Built with
